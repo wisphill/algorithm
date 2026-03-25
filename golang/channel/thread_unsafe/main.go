@@ -5,6 +5,8 @@ import (
 	"time"
 )
 
+// all kinds of data like array, slices, struct of the Go are not thread-safe because they does not have the lock inside
+// the channel type is thread safe, because
 func main() {
 
 	// runtime fatal error because of concurrent read-write at the same time
